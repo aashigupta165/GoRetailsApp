@@ -102,7 +102,7 @@ public class VegetablesActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(VegetablesActivity.this, VegetablesActivity.class));
+                webView.reload();
                 break;
         }
         return super.onOptionsItemSelected(item);

@@ -102,7 +102,7 @@ public class GroceryActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(GroceryActivity.this, GroceryActivity.class));
+                webView.reload();
                 break;
         }
         return super.onOptionsItemSelected(item);

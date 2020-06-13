@@ -108,7 +108,7 @@ public class SearchActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(SearchActivity.this, SearchActivity.class));
+                webView.reload();
                 break;
         }
         return super.onOptionsItemSelected(item);

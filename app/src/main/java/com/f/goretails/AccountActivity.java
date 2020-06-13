@@ -102,7 +102,7 @@ public class AccountActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(AccountActivity.this, AccountActivity.class));
+                webView.reload();
                 break;
         }
         return super.onOptionsItemSelected(item);

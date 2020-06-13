@@ -102,7 +102,7 @@ public class SeasonalFruitsActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(SeasonalFruitsActivity.this, SeasonalFruitsActivity.class));
+                webView.reload();
                 break;
         }
         return super.onOptionsItemSelected(item);

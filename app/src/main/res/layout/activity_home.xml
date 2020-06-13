@@ -21,6 +21,7 @@
         app:itemTextColor="@color/colorPrimaryDark"
         app:itemIconTint="@color/colorPrimaryDark"
         app:menu="@menu/drawermenu"
+        android:scrollbarStyle="outsideOverlay"
         android:layout_gravity="start"
         android:paddingHorizontal="10dp"
         app:headerLayout="@layout/header">

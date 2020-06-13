@@ -2,6 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group
+        android:id="@+id/group0"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Home"/>
+    </group>
+
+    <group
         android:id="@+id/group1"
         android:checkableBehavior="single">
     <item
@@ -55,6 +63,30 @@
     <item
         android:id="@+id/seasonal_fruits"
         android:title="Seasonal fruits"/>
+    </group>
+
+    <group
+        android:id="@+id/group8"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/offers"
+            android:title="Offers"/>
+    </group>
+
+    <group
+        android:id="@+id/group9"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/orders"
+            android:title="My Orders"/>
+    </group>
+
+    <group
+        android:id="@+id/group10"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/contact"
+            android:title="Contact Us"/>
     </group>
 
 </menu>

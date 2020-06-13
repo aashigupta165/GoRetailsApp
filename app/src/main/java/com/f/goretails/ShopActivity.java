@@ -48,6 +48,9 @@ public class ShopActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
+                    case R.id.home:
+                        startActivity(new Intent(ShopActivity.this, HomeActivity.class));
+                        break;
                     case R.id.account:
                         startActivity(new Intent(ShopActivity.this, AccountActivity.class));
                         break;
@@ -68,6 +71,15 @@ public class ShopActivity extends AppCompatActivity {
                         break;
                     case R.id.seasonal_fruits:
                         startActivity(new Intent(ShopActivity.this, SeasonalFruitsActivity.class));
+                        break;
+                    case R.id.offers:
+                        startActivity(new Intent(ShopActivity.this, OffersActivity.class));
+                        break;
+                    case R.id.orders:
+                        startActivity(new Intent(ShopActivity.this, OrdersActivity.class));
+                        break;
+                    case R.id.contact:
+                        startActivity(new Intent(ShopActivity.this, ContactActivity.class));
                         break;
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);

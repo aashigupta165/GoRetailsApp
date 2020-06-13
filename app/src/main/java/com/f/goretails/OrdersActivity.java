@@ -17,7 +17,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class DairyProductsActivity extends AppCompatActivity {
+public class OrdersActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
@@ -29,7 +29,7 @@ public class DairyProductsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        getSupportActionBar().setTitle("Dairy Products");
+        getSupportActionBar().setTitle("My Orders");
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
@@ -41,7 +41,7 @@ public class DairyProductsActivity extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://goretails.in/product-category/dairy-products/");
+        webView.loadUrl("http://goretails.in/myaccount/orders/");
 
         navigationView = (NavigationView) findViewById(R.id.navigationView);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -49,37 +49,37 @@ public class DairyProductsActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.home:
-                        startActivity(new Intent(DairyProductsActivity.this, HomeActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, HomeActivity.class));
                         break;
                     case R.id.account:
-                        startActivity(new Intent(DairyProductsActivity.this, AccountActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, AccountActivity.class));
                         break;
                     case R.id.shop:
-                        startActivity(new Intent(DairyProductsActivity.this, ShopActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, ShopActivity.class));
                         break;
                     case R.id.fruits:
-                        startActivity(new Intent(DairyProductsActivity.this, FruitsActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, FruitsActivity.class));
                         break;
                     case R.id.vegetables:
-                        startActivity(new Intent(DairyProductsActivity.this, VegetablesActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, VegetablesActivity.class));
                         break;
                     case R.id.grocery:
-                        startActivity(new Intent(DairyProductsActivity.this, GroceryActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, GroceryActivity.class));
                         break;
                     case R.id.dairy_products:
-                        startActivity(new Intent(DairyProductsActivity.this, DairyProductsActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, DairyProductsActivity.class));
                         break;
                     case R.id.seasonal_fruits:
-                        startActivity(new Intent(DairyProductsActivity.this, SeasonalFruitsActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, SeasonalFruitsActivity.class));
                         break;
                     case R.id.offers:
-                        startActivity(new Intent(DairyProductsActivity.this, OffersActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, OffersActivity.class));
                         break;
                     case R.id.orders:
-                        startActivity(new Intent(DairyProductsActivity.this, OrdersActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, OrdersActivity.class));
                         break;
                     case R.id.contact:
-                        startActivity(new Intent(DairyProductsActivity.this, ContactActivity.class));
+                        startActivity(new Intent(OrdersActivity.this, ContactActivity.class));
                         break;
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
@@ -105,7 +105,7 @@ public class DairyProductsActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(DairyProductsActivity.this, HomeActivity.class));
+                startActivity(new Intent(OrdersActivity.this, HomeActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -118,7 +118,7 @@ public class DairyProductsActivity extends AppCompatActivity {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Intent intent = new Intent(DairyProductsActivity.this, SearchActivity.class);
+                Intent intent = new Intent(OrdersActivity.this, SearchActivity.class);
                 intent.putExtra("query", query);
                 startActivity(intent);
                 return false;

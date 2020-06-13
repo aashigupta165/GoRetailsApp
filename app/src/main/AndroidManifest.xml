@@ -27,6 +27,9 @@
         <activity android:name=".GroceryActivity"></activity>
         <activity android:name=".DairyProductsActivity"></activity>
         <activity android:name=".SeasonalFruitsActivity"></activity>
+        <activity android:name=".OrdersActivity"></activity>
+        <activity android:name=".OffersActivity"></activity>
+        <activity android:name=".ContactActivity"></activity>
         <activity android:name=".SearchActivity"></activity>
     </application>
 

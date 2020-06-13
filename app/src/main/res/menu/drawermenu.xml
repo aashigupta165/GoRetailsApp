@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/account"
+        android:title="Account"/>
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/shop"
+        android:title="Shop"/>
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/fruits"
+        android:title="Fruits"/>
+    </group>
+
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/vegetables"
+        android:title="Vegetables"/>
+    </group>
+
+    <group
+        android:id="@+id/group5"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/grocery"
+        android:title="Grocery"/>
+    </group>
+
+    <group
+        android:id="@+id/group6"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/dairy_products"
+        android:title="Dairy products"/>
+    </group>
+
+    <group
+        android:id="@+id/group7"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/seasonal_fruits"
+        android:title="Seasonal fruits"/>
+    </group>
+
+</menu>

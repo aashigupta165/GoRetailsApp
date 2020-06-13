@@ -78,9 +78,6 @@ public class ContactActivity extends AppCompatActivity {
                     case R.id.orders:
                         startActivity(new Intent(ContactActivity.this, OrdersActivity.class));
                         break;
-                    case R.id.contact:
-                        startActivity(new Intent(ContactActivity.this, ContactActivity.class));
-                        break;
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
@@ -105,7 +102,7 @@ public class ContactActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(ContactActivity.this, HomeActivity.class));
+                startActivity(new Intent(ContactActivity.this, ContactActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

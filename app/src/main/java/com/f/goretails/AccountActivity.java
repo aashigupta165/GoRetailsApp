@@ -51,9 +51,6 @@ public class AccountActivity extends AppCompatActivity {
                     case R.id.home:
                         startActivity(new Intent(AccountActivity.this, HomeActivity.class));
                         break;
-                    case R.id.account:
-                        startActivity(new Intent(AccountActivity.this, AccountActivity.class));
-                        break;
                     case R.id.shop:
                         startActivity(new Intent(AccountActivity.this, ShopActivity.class));
                         break;
@@ -105,7 +102,7 @@ public class AccountActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(AccountActivity.this, HomeActivity.class));
+                startActivity(new Intent(AccountActivity.this, AccountActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

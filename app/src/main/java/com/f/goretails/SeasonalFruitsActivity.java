@@ -69,9 +69,6 @@ public class SeasonalFruitsActivity extends AppCompatActivity {
                     case R.id.dairy_products:
                         startActivity(new Intent(SeasonalFruitsActivity.this, DairyProductsActivity.class));
                         break;
-                    case R.id.seasonal_fruits:
-                        startActivity(new Intent(SeasonalFruitsActivity.this, SeasonalFruitsActivity.class));
-                        break;
                     case R.id.offers:
                         startActivity(new Intent(SeasonalFruitsActivity.this, OffersActivity.class));
                         break;
@@ -105,7 +102,7 @@ public class SeasonalFruitsActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(SeasonalFruitsActivity.this, HomeActivity.class));
+                startActivity(new Intent(SeasonalFruitsActivity.this, SeasonalFruitsActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

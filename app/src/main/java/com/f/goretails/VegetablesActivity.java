@@ -60,9 +60,6 @@ public class VegetablesActivity extends AppCompatActivity {
                     case R.id.fruits:
                         startActivity(new Intent(VegetablesActivity.this, FruitsActivity.class));
                         break;
-                    case R.id.vegetables:
-                        startActivity(new Intent(VegetablesActivity.this, VegetablesActivity.class));
-                        break;
                     case R.id.grocery:
                         startActivity(new Intent(VegetablesActivity.this, GroceryActivity.class));
                         break;
@@ -105,7 +102,7 @@ public class VegetablesActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(VegetablesActivity.this, HomeActivity.class));
+                startActivity(new Intent(VegetablesActivity.this, VegetablesActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

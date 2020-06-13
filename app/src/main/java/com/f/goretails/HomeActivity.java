@@ -47,9 +47,6 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
-                    case R.id.home:
-                        startActivity(new Intent(HomeActivity.this, HomeActivity.class));
-                        break;
                     case R.id.account:
                         startActivity(new Intent(HomeActivity.this, AccountActivity.class));
                         break;

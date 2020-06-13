@@ -63,9 +63,6 @@ public class GroceryActivity extends AppCompatActivity {
                     case R.id.vegetables:
                         startActivity(new Intent(GroceryActivity.this, VegetablesActivity.class));
                         break;
-                    case R.id.grocery:
-                        startActivity(new Intent(GroceryActivity.this, GroceryActivity.class));
-                        break;
                     case R.id.dairy_products:
                         startActivity(new Intent(GroceryActivity.this, DairyProductsActivity.class));
                         break;
@@ -105,7 +102,7 @@ public class GroceryActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(GroceryActivity.this, HomeActivity.class));
+                startActivity(new Intent(GroceryActivity.this, GroceryActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

@@ -72,9 +72,6 @@ public class OffersActivity extends AppCompatActivity {
                     case R.id.seasonal_fruits:
                         startActivity(new Intent(OffersActivity.this, SeasonalFruitsActivity.class));
                         break;
-                    case R.id.offers:
-                        startActivity(new Intent(OffersActivity.this, OffersActivity.class));
-                        break;
                     case R.id.orders:
                         startActivity(new Intent(OffersActivity.this, OrdersActivity.class));
                         break;
@@ -105,7 +102,7 @@ public class OffersActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(OffersActivity.this, HomeActivity.class));
+                startActivity(new Intent(OffersActivity.this, OffersActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

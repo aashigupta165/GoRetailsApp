@@ -75,9 +75,6 @@ public class OrdersActivity extends AppCompatActivity {
                     case R.id.offers:
                         startActivity(new Intent(OrdersActivity.this, OffersActivity.class));
                         break;
-                    case R.id.orders:
-                        startActivity(new Intent(OrdersActivity.this, OrdersActivity.class));
-                        break;
                     case R.id.contact:
                         startActivity(new Intent(OrdersActivity.this, ContactActivity.class));
                         break;
@@ -105,7 +102,7 @@ public class OrdersActivity extends AppCompatActivity {
                 search(item);
                 break;
             case R.id.reset:
-                startActivity(new Intent(OrdersActivity.this, HomeActivity.class));
+                startActivity(new Intent(OrdersActivity.this, OrdersActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

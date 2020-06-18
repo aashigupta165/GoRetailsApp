@@ -18,7 +18,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>\
+        </activity>
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".AccountActivity"></activity>
         <activity android:name=".ShopActivity"></activity>
